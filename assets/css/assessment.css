@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* HEADER START */
+header {
+    width: 1920px;
+    height: 100px;
+    background: rgba(0, 176, 255, 0.2);
+}
+
+.title-box {
+    position: absolute;
+    width: 220px;
+    height: 45px;
+    left: 837px;
+    top: 25px;
+
+    border-radius: 5px;
+    border: 2px solid #1663BE;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: Ubuntu;
+    font-style: regular;
+    font-weight: bold;
+    font-size: 40;
+    line-height: 37px;
+    text-align: center;
+    align-items: center;
+
+    color: #1663BE;
+    
+}
+
+/* HEADER END */
+
+/* BACK BUTTON START */
+.back-btn p {
+    font-family: Roboto;
+    font-style: medium;
+    font-size: 22px;
+}
+/* BACK BUTTON END */
