@@ -9,6 +9,7 @@
 
     <!-- Include Files -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script type="text/javascript" src="../assets/js/terms-modal.js"></script>
 </head>
 <body>
     <header>
@@ -23,7 +24,24 @@
             </div>
         </nav>
         <div class="assessment-btn">
-            <a href="assessment.html"><button class="assessment-text" name="assessment-btn">Start Assessment</button></a>
+            <button class="assessment-text" id="assessment-btn" name="assessment-btn">Start Assessment</button>
+        </div>
+
+        <!-- Terms Content -->
+        <div class="terms-modal" id="termsModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Terms of Service</h2>
+                <p>Please read the terms of service before beginning the assessment:</p>
+                <h3>Do not use in an emergency:</h3>
+                <p>The system is designed to help with the initial diagnosis of pneumonia. In an emergency,dial your local emergency number.</p>
+                <h3>Your data is safe:</h3>
+                <p>The information you provide is kept private and is not shared with anyone.</p>
+                <div class="conditions">
+                    <button class="decline-btn">I Decline</button>
+                    <a href="assessment.html"><button class="accept-btn">I Accept</button></a>
+                </div>
+            </div>
         </div>
     </header>
 </body>
