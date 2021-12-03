@@ -6,6 +6,7 @@
     <!-- Extensions & Libraries -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap" rel="stylesheet">
     
     <!-- Include Files -->
     <link rel="shortcut icon" href="../assets/images/logo-only-modified.png" />
@@ -32,12 +33,12 @@
             <div class="question">
                 <h4>Question 1</h4>
                 <label>What is your age?</label>
-                <input type="number" name="age" min="1" max="100" required>
+                <input type="number" id="ageAnswer" name="age" min="1" max="100" required>
             </div>
             <div class="question">
                 <h4>Question 2</h4>
                 <label>What is your current temperature?</label>
-                <input type="number" name="age" min="35" max="39" required>
+                <input type="number" id="tempAnswer" name="age" min="35" max="39" required>
             </div>
             <div class="question">
                 <h4>Question 3</h4>
@@ -46,6 +47,23 @@
                     bronchiectasis, or cystic fibrosis or any other lung disease?
                 </label>
                 <input type="range" name="age" min="1" max="100" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None: </b> Confirmed negative of any lung disease.
+                        <br>
+                        <br>
+                        <b>Unsure: </b> Not entirely certain, you may feel lung disease symptoms but is not confirmed negative or positive.
+                        <br>
+                        <br>
+                        <b>Mild: </b> Diagnosed with asthma, COPD, or any other lung disease, can feel the symptoms but does not affect daily activities, might not even have any symptoms, diagnosed with stage 1 lung disease.
+                        <br>
+                        <br>
+                        <b>Moderate: </b> Occasionally affects daily functioning, may need regular medical check-up, diagnosed with stage 2 lung disease.
+                        <br>
+                        <br>
+                        <b>Severe: </b> Consistently affects daily functioning, may unable to do anything at all, no possible treatment, diagnosed with stage 3 or higher lung disease.
+                    </p>
+                </div>
             </div>
             <div class="question">
                 <h4>Question 4</h4>
@@ -59,7 +77,7 @@
             </div>
             <div class="question">
                 <h4>Question 6</h4>
-                <label>What is the severity of your HIV/AIDS?	</label>
+                <label>What is the severity of your HIV/AIDS?</label>
                 <input type="range" name="age" min="1" max="100" required>
             </div>
             <div class="question">
