@@ -2,21 +2,155 @@
 <html lang="en">
 <head>
     <title>Assessment Page</title>
+
     <!-- Extensions & Libraries -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
     <!-- Include Files -->
+    <link rel="shortcut icon" href="../assets/images/logo-only-modified.png" />
     <link rel="stylesheet" href="../assets/css/assessment.css" />
+    <script type="text/javascript" src="../assets/js/assessment.js"></script>
 </head>
 <body>
     <header>
+        <div class="back-btn">
+            <img src="../assets/images/back-btn.png">
+            <p>Back to Home</p>
+        </div>
         <div class="title-box">
             <h1 class="title">PneumoTech</h1>
         </div>
     </header>
-    <div class="back-btn">
-        <img src="../assets/images/back-btn.png">
-        <p>Back to Home</p>
-    </div>
+
+    <section class="container">
+        <div class="welcome">
+            <h1>Welcome</h1>
+        </div>
+
+        <form action="result.html">
+            <div class="question">
+                <h4>Question 1</h4>
+                <label>What is your age?</label>
+                <input type="number" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 2</h4>
+                <label>What is your current temperature?</label>
+                <input type="number" name="age" min="35" max="39" required>
+            </div>
+            <div class="question">
+                <h4>Question 3</h4>
+                <label>
+                    What is the severity of your lung disease such as Chronic obstructive pulmonary disease, 
+                    bronchiectasis, or cystic fibrosis or any other lung disease?
+                </label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 4</h4>
+                <label>What is the severity of your heart disease?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 5</h4>
+                <label>What is the severity of your diabetes?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 6</h4>
+                <label>What is the severity of your HIV/AIDS?	</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 7</h4>
+                <label>How many days have you been experiencing cough/cold?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 8</h4>
+                <label>How many month/s have you been taking chemotherapy/steroid?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 9</h4>
+                <label>How many cigarette/s do you smoke every day?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 10</h4>
+                <label>How many bottle/s of alcohol do you drink for a day?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 11</h4>
+                <label>
+                    How many hours per day are you being exposed to certain chemical pollutants 
+                    (toxic fumes, secondhand smoke)? 
+                </label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 12</h4>
+                <label>What is the severity of the swallowing problems you feel?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 13</h4>
+                <label>What is the severity of the sweating or shaking chills you feel?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 14</h4>
+                <label>How difficult is your breathing?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 15</h4>
+                <label>What is the severity of the sharp or stabbing chest pain you feel?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 16</h4>
+                <label>How serious is your loss of appetite?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 17</h4>
+                <label>What is the severity of the fatigue/tiredness you feel?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 18</h4>
+                <label>What is the severity of the nausea and vomiting you feel?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 19</h4>
+                <label>What is the severity of the confusion you feel?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 20</h4>
+                <label>How many days have you been hospitalized?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+            <div class="question">
+                <h4>Question 21</h4>
+                <label>How many week/s have you been using ventilator?</label>
+                <input type="range" name="age" min="1" max="100" required>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="button">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+
+    </section>
+
 </body>
 </html>

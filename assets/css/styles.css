@@ -26,7 +26,6 @@ body {
     height: 1080px;
 
     font-family: "Helvetica";
-
     background-color: #F7F7F7;
 }
 
@@ -146,14 +145,72 @@ header {
 }
 
 .modal-content {
-    background-color: #fefefe;
     margin: auto;
     padding: 30px;
-    border: 1px solid #888;
     width: 400px;
-    height: 300px;
+    height: 370px;
+
+    background-color: #fefefe;
+
+    border: 1px solid #888;
+    border-radius: 10px;
 }
-  
+
+.modal-content hr {
+    margin: 10px 0;
+}
+
+.modal-content h2 {
+    padding: 10px 0;
+
+    font-size: 35px;
+    text-align: center;
+}
+
+.modal-content p {
+    padding-bottom: 10px;
+}
+
+.modal-content h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.conditions {
+    text-align: center;
+}
+
+.conditions button {
+    width: 130px;
+    height: 40px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.conditions button:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
+    transition: all .5s;
+}
+
+.decline-btn {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.accept-btn {
+    margin-left: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: white;
+    background-color: #26a0fd;
+}
+
 .close {
     color: #aaaaaa;
     float: right;
@@ -185,6 +242,7 @@ header {
 
     background-color: white;
 }
+
 .tagline-content p{
     width: 580px;
     height: 350px;
@@ -312,23 +370,12 @@ footer {
     padding-top: 15px;
 }
 
-.credits {
-    position: absolute;
-    width: 400px;
-    height: auto;
-    top: 70px;
-    left: 1300px;
-
-    font-family: Roboto;
-    font-size: 17px;
-    font-weight: 100;
-}
 
 .about-footer {
     position: absolute;
     width: 150px;
     top: 60px;
-    left: 600px;
+    left: 550px;
 }
 
 .about-footer a, .contact-footer a {
@@ -357,7 +404,30 @@ footer {
     position: absolute;
     width: 200px;
     top: 60px;
-    left: 900px;
+    left: 800px;
 }
 
+.icons {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 60px;
+    left: 1050px;
+}
+
+.icons img {
+    padding: 0 10px;
+}
+
+.credits {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: 70px;
+    left: 1350px;
+
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 100;
+}
 /* END FOOTER SECTION */
