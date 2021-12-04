@@ -25,149 +25,382 @@
     </header>
 
     <section class="container">
-        <div class="welcome">
-            <h1>Welcome</h1>
-        </div>
-
         <form action="result.html">
-            <div class="question">
-                <h4>Question 1</h4>
+            <div class="welcome">
+                <h1>Welcome</h1>
+            </div>
+            <div class="question fade">
+                <div class="numberquestion">question 1</div>
                 <label>What is your age?</label>
-                <input type="number" id="ageAnswer" name="age" min="1" max="100" required>
+                <input type="number" id="ageAnswer" name="age" min="1" max="100" placeholder="Ex. 24" required>
             </div>
-            <div class="question">
-                <h4>Question 2</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 2</div>
                 <label>What is your current temperature?</label>
-                <input type="number" id="tempAnswer" name="age" min="35" max="39" required>
+                <input type="number" id="tempAnswer" name="temperature" min="35" max="39" 
+                placeholder="In Celcius" required>
             </div>
-            <div class="question">
-                <h4>Question 3</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 3</div>
                 <label>
                     What is the severity of your lung disease such as Chronic obstructive pulmonary disease, 
                     bronchiectasis, or cystic fibrosis or any other lung disease?
                 </label>
-                <input type="range" name="age" min="1" max="100" required>
+                <div class="range-wrap">
+                    <input 
+                        type="range" 
+                        id="lungAnswer" 
+                        class="range_20" 
+                        min="0" max="20" step="0.1" 
+                        value="0"
+                        oninput="this.nextElementSibling.value = this.value"
+                        required>
+                    <output>0</output>
+                </div>
                 <div class="tooltip-text">
                     <p>
-                        <b>None: </b> Confirmed negative of any lung disease.
+                        <b>None:</b> Confirmed negative of any lung disease.
                         <br>
                         <br>
-                        <b>Unsure: </b> Not entirely certain, you may feel lung disease symptoms but is not confirmed negative or positive.
+                        <b>Unsure:</b> Not entirely certain, you may feel lung disease symptoms but is not 
+                            confirmed negative or positive.
                         <br>
                         <br>
-                        <b>Mild: </b> Diagnosed with asthma, COPD, or any other lung disease, can feel the symptoms but does not affect daily activities, might not even have any symptoms, diagnosed with stage 1 lung disease.
+                        <b>Mild:</b> Diagnosed with asthma, COPD, or any other lung disease, can feel the 
+                            symptoms but does not affect daily activities, might not even have any symptoms, 
+                            diagnosed with stage 1 lung disease.
                         <br>
                         <br>
-                        <b>Moderate: </b> Occasionally affects daily functioning, may need regular medical check-up, diagnosed with stage 2 lung disease.
+                        <b>Moderate:</b> Occasionally affects daily functioning, may need regular medical 
+                            check-up, diagnosed with stage 2 lung disease.
                         <br>
                         <br>
-                        <b>Severe: </b> Consistently affects daily functioning, may unable to do anything at all, no possible treatment, diagnosed with stage 3 or higher lung disease.
+                        <b>Severe:</b> Consistently affects daily functioning, may unable to do anything 
+                            at all, no possible treatment, diagnosed with stage 3 or higher lung disease.
                     </p>
                 </div>
             </div>
-            <div class="question">
-                <h4>Question 4</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 4</div>
                 <label>What is the severity of your heart disease?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="heartAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Confirmed negative of any heart disease.
+                        <br>
+                        <br>
+                        <b>Unsure:</b> Not entirely certain, you may feel heart disease symptoms but is 
+                            not confirmed negative or positive.
+                        <br>
+                        <br>
+                        <b>Mild:</b> Diagnosed with early stage of any heart disease, can feel the symptoms 
+                            but does not affect daily activities, might not even have any symptoms.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Occasionally affects daily functioning, may need regular medical 
+                            check-up, diagnosed with stage 2 heart disease, heart attack happens every once 
+                            in a while.
+                        <br>
+                        <br>
+                        <b>Severe:</b> Cannot perform activities that normally once could, may unable to 
+                            do anything at all, no possible treatment, diagnosed with stage 3 or higher 
+                            heart disease, heart attack more frequently, intense racing heart beat or very 
+                            slow heart beat.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 5</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 5</div>
                 <label>What is the severity of your diabetes?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="diabetesAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Confirmed negative of diabetes.
+                        <br>
+                        <br>
+                        <b>Unsure:</b> Not entirely certain, you may feel diabetes symptoms but is not 
+                            confirmed negative or positive.
+                        <br>
+                        <br>
+                        <b>Mild:</b> Diagnosed with any type of diabetes, can feel the symptoms but does 
+                            not affect daily activities, urinating 7-8 times a day (usually a person has 
+                            to pee between 4-7 times a day).
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Occasionally affects daily functioning, may need regular medical 
+                            check-up, experiencing blurry vision, frequent urination around 9 – 11 per day, 
+                            you feel thirstier and hungrier.
+                        <br>
+                        <br>
+                        <b>Severe:</b> ot perform activities that normally once could, may unable to do 
+                            anything at all, no possible treatment, symptoms are way worse, developed more 
+                            complications from diabetes such as skin infections, other organ may be damaged, 
+                            blood glucose is steadily rising.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 6</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 6</div>
                 <label>What is the severity of your HIV/AIDS?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="hivAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Confirmed negative of HIV/AIDS, never performed sexual activities with 
+                            anyone, never had blood transfusions.
+                        <br>
+                        <br>
+                        <b>Unsure:</b> Not entirely certain, you may feel HIV/AIDS symptoms but is not 
+                            confirmed negative or positive.
+                        <br>
+                        <br>
+                        <b>Mild:</b> Diagnosed with stage 1 HIV, can feel the symptoms but does not affect 
+                            daily activities, very mild flu-like symptoms that may be unnoticeable.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Diagnosed with stage 2-3 HIV, may occasionally affects daily 
+                            functioning, may need regular medical check-up.
+                        <br>
+                        <br>
+                        <b>Severe:</b> HIV already progressed to stage 4 (AIDS), developed more complications 
+                            from HIV/AIDS such as infections or certain type of cancers, immune system is extremely 
+                            weakened.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 7</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 7</div>
                 <label>How many days have you been experiencing cough/cold?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="coughAnswer" class="range_50" min="0" max="50" step="0.1" required>
             </div>
-            <div class="question">
-                <h4>Question 8</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 8</div>
                 <label>How many month/s have you been taking chemotherapy/steroid?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="chemoAnswer" class="range_12" min="0" max="12" step="0.1" required>
             </div>
-            <div class="question">
-                <h4>Question 9</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 9</div>
                 <label>How many cigarette/s do you smoke every day?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="smokeAnswer" class="range_20" min="0" max="20" step="0.1" required>
             </div>
-            <div class="question">
-                <h4>Question 10</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 10</div>
                 <label>How many bottle/s of alcohol do you drink for a day?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="alcoholAnswer" class="range_8" min="0" max="8" step="0.1" required>
             </div>
-            <div class="question">
-                <h4>Question 11</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 11</div>
                 <label>
                     How many hours per day are you being exposed to certain chemical pollutants 
                     (toxic fumes, secondhand smoke)? 
                 </label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="chemicalAnswer" class="range_20" min="0" max="20" step="0.1" required>
             </div>
-            <div class="question">
-                <h4>Question 12</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 12</div>
                 <label>What is the severity of the swallowing problems you feel?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="swallowAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Occasional difficulty swallowing, such as when you eat too fast or 
+                            don't chew your food well enough.
+                        <br>
+                        <br>
+                        <b>Mild:</b> Mild difficulty in swallowing foods even not eating too fast, difficulty 
+                            in controlling food or liquid in the mouth, hoarseness.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Choking while eating, coughing or gagging while swallowing, drooling, 
+                            can feel the pain while swallowing.
+                        <br>
+                        <br>
+                        <b>Severe:</b> Inability to control saliva in the mouth, feeling of food becoming 
+                            stuck in the throat or behind the breastbone, bringing food back up, unexplained 
+                            weight loss (malnutrition), may not be able to swallow anything, may be accompanied 
+                            by vomit.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 13</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 13</div>
                 <label>What is the severity of the sweating or shaking chills you feel?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="sweatingAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Sweating/shaking normally on certain occasions.
+                        <br>
+                        <br>
+                        <b>Mild:</b> Sweating that you don't notice when you're not doing anything physical. 
+                            Minimal increase sweating than usual when you are doing any physical activity.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> When not doing anything, there is an increase in sweating, and 
+                            when doing physical activity, there is a significant and noticeable increase in sweating.
+                        <br>
+                        <br>
+                        <b>Severe:</b> Excessive sweating occurs without being triggered by a rise in 
+                            temperature or physical activity. It interferes with daily activities and can lead 
+                            to social anxiety or embarrassment.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 14</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 14</div>
                 <label>How difficult is your breathing?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="breatheAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Shortness of breath experienced on occasion with physical activity 
+                            or spending time at high altitude.
+                        <br>
+                        <br>
+                        <b>Mild:</b> A bit worse shortness of breath than usual when doing physical activity 
+                            but it does not last long.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Shortness of breath progresses to the point where it's causing 
+                            you to modify your activity level, affecting your daily activities.
+                        <br>
+                        <br>
+                        <b>Severe:</b> Difficulty catching breath even at rest, chest may feel too tight 
+                            to inhale or exhale fully, breathing becomes faster and shallower, breathlessness 
+                            may come suddenly and unexpectedly.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 15</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 15</div>
                 <label>What is the severity of the sharp or stabbing chest pain you feel?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="chestAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Shortness of breath experienced on occasion with physical activity 
+                            or spending time at high altitude.
+                        <br>
+                        <br>
+                        <b>Mild:</b> A bit worse shortness of breath than usual when doing physical activity 
+                            but it does not last long.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Shortness of breath progresses to the point where it's causing 
+                            you to modify your activity level, affecting your daily activities.
+                        <br>
+                        <br>
+                        <b>Severe:</b>Difficulty catching breath even at rest, chest may feel too tight 
+                            to inhale or exhale fully, breathing becomes faster and shallower, breathlessness 
+                            may come suddenly and unexpectedly.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 16</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 16</div>
                 <label>How serious is your loss of appetite?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="appetiteAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b>Not experiencing loss of appetite.
+                        <br>
+                        <br>
+                        <b>Mild:</b>Loss of appetite for a day only.
+                        <br>
+                        <br>
+                        <b>Moderate:</b>Loss of appetite for 4 days straight, consistently feel full 
+                            sooner than normal or after eating less than usual.
+                        <br>
+                        <br>
+                        <b>Severe: </b>Unintentional weight loss, idea of eating food makes you feel 
+                            nauseous, loss of appetite over a more extended period of time (over a week).
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 17</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 17</div>
                 <label>What is the severity of the fatigue/tiredness you feel?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="fatigueAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Fatigue with reasonable cause.
+                        <br>
+                        <br>
+                        <b>Mild:</b> Not easily fatigued but when you do it is treatable with rest, 
+                            doesn’t interfere in everyday life.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Does too little but feel fatigued, daily tasks can still be done, 
+                            although at a slower pace than normal, lesser strength in muscles.
+                        <br>
+                        <br>
+                        <b>Severe:</b> Mentally feel exhausted, cannot concentrate, social activity is limited, 
+                            too tired to even eat, overwhelming urge to sleep, hard to get up in the morning, may 
+                            not feel refreshed after you rest, your fatigue gets worse or lasts longer than a week 
+                            or two, fatigue interferes with physical functioning.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 18</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 18</div>
                 <label>What is the severity of the nausea and vomiting you feel?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="nauseaAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Not experiencing nausea/vomiting.
+                        <br>
+                        <br>
+                        <b>Mild:</b> Nausea and vomiting only last for maximum of 5 hours.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Nausea and vomiting last for more than 8 hours but less than 
+                            12 hours, dry mouth, decreased urination, home remedies are still effective.
+                        <br>
+                        <br>
+                        <b>Severe:</b> Nausea and vomiting doesn’t subside within 24 hours of trying 
+                            over-the counter interventions and has left you unable to eat and drink, 
+                            associated with abdominal pain, vomiting blood.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 19</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 19</div>
                 <label>What is the severity of the confusion you feel?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="confusionAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="tooltip-text">
+                    <p>
+                        <b>None:</b> Completely healthy mind.
+                        <br>
+                        <br>
+                        <b>Mild:</b> Tend to forget at rare occasions, difficulty sleeping, poor memory 
+                            or concentration, blurred vision.
+                        <br>
+                        <br>
+                        <b>Moderate:</b> Difficulty paying attention and making decision, inability to 
+                            think as clearly or quickly as you normally do, poor balance, there may be mood swings.
+                        <br>
+                        <br>
+                        <b>Severe:</b> The loss of ability to recognize people and or places, or tell 
+                            time and the date, seeing things that others do not (hallucinating) or believing 
+                            things that are not really happening (delusions), forgetting what a task is while 
+                            it’s being performed, sudden changes in emotion, such as sudden agitation, tend to 
+                            be aggressive, loss of consciousness.
+                    </p>
+                </div>
             </div>
-            <div class="question">
-                <h4>Question 20</h4>
+            <div class="question fade">
+                <div class="numberquestion">question 20</div>
                 <label>How many days have you been hospitalized?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="hospitalAnswer" class="range_100" min="0" max="100" step="0.1" required>
             </div>
-            <div class="question">
-                <h4>Question 21</h4>
+            <div class="question fade">
+                <div>question 21</div>
                 <label>How many week/s have you been using ventilator?</label>
-                <input type="range" name="age" min="1" max="100" required>
+                <input type="range" id="ventilatorAnswer" class="range_50" min="0" max="50" step="0.1" required>
+                
+                <div class="button">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>       
             </div>
 
-            <br>
-            <br>
-            <br>
-
-            <div class="button">
-                <button type="submit" class="submit-btn">Submit</button>
-            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </form>
-
     </section>
 
 </body>
