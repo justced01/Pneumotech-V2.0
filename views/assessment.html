@@ -26,21 +26,18 @@
 
     <section class="container">
         <form action="result.html">
-            <div class="welcome">
-                <h1>Welcome</h1>
-            </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 1</div>
                 <label>What is your age?</label>
                 <input type="number" id="ageAnswer" name="age" min="1" max="100" placeholder="Ex. 24" required>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 2</div>
                 <label>What is your current temperature?</label>
                 <input type="number" id="tempAnswer" name="temperature" min="35" max="39" 
                 placeholder="In Celcius" required>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 3</div>
                 <label>
                     What is the severity of your lung disease such as Chronic obstructive pulmonary disease, 
@@ -55,7 +52,7 @@
                         value="0"
                         oninput="this.nextElementSibling.value = this.value"
                         required>
-                    <output>0</output>
+                    <output id="rangeValue">0</output>
                 </div>
                 <div class="tooltip-text">
                     <p>
@@ -80,7 +77,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 4</div>
                 <label>What is the severity of your heart disease?</label>
                 <input type="range" id="heartAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -109,7 +106,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 5</div>
                 <label>What is the severity of your diabetes?</label>
                 <input type="range" id="diabetesAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -139,7 +136,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 6</div>
                 <label>What is the severity of your HIV/AIDS?</label>
                 <input type="range" id="hivAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -167,27 +164,27 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 7</div>
                 <label>How many days have you been experiencing cough/cold?</label>
                 <input type="range" id="coughAnswer" class="range_50" min="0" max="50" step="0.1" required>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 8</div>
                 <label>How many month/s have you been taking chemotherapy/steroid?</label>
                 <input type="range" id="chemoAnswer" class="range_12" min="0" max="12" step="0.1" required>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 9</div>
                 <label>How many cigarette/s do you smoke every day?</label>
                 <input type="range" id="smokeAnswer" class="range_20" min="0" max="20" step="0.1" required>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 10</div>
                 <label>How many bottle/s of alcohol do you drink for a day?</label>
                 <input type="range" id="alcoholAnswer" class="range_8" min="0" max="8" step="0.1" required>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 11</div>
                 <label>
                     How many hours per day are you being exposed to certain chemical pollutants 
@@ -195,7 +192,7 @@
                 </label>
                 <input type="range" id="chemicalAnswer" class="range_20" min="0" max="20" step="0.1" required>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 12</div>
                 <label>What is the severity of the swallowing problems you feel?</label>
                 <input type="range" id="swallowAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -220,7 +217,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 13</div>
                 <label>What is the severity of the sweating or shaking chills you feel?</label>
                 <input type="range" id="sweatingAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -243,7 +240,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 14</div>
                 <label>How difficult is your breathing?</label>
                 <input type="range" id="breatheAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -267,7 +264,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 15</div>
                 <label>What is the severity of the sharp or stabbing chest pain you feel?</label>
                 <input type="range" id="chestAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -291,7 +288,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 16</div>
                 <label>How serious is your loss of appetite?</label>
                 <input type="range" id="appetiteAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -312,7 +309,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 17</div>
                 <label>What is the severity of the fatigue/tiredness you feel?</label>
                 <input type="range" id="fatigueAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -336,7 +333,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 18</div>
                 <label>What is the severity of the nausea and vomiting you feel?</label>
                 <input type="range" id="nauseaAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -358,7 +355,7 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 19</div>
                 <label>What is the severity of the confusion you feel?</label>
                 <input type="range" id="confusionAnswer" class="range_20" min="0" max="20" step="0.1" required>
@@ -383,13 +380,13 @@
                     </p>
                 </div>
             </div>
-            <div class="question fade">
+            <div class="slide-container fade"> 
                 <div class="numberquestion">question 20</div>
                 <label>How many days have you been hospitalized?</label>
                 <input type="range" id="hospitalAnswer" class="range_100" min="0" max="100" step="0.1" required>
             </div>
-            <div class="question fade">
-                <div>question 21</div>
+            <div class="slide-container fade"> 
+                <div class="numberquestion">question 21</div>
                 <label>How many week/s have you been using ventilator?</label>
                 <input type="range" id="ventilatorAnswer" class="range_50" min="0" max="50" step="0.1" required>
                 
@@ -402,6 +399,29 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </form>
     </section>
-
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+        <span class="dot" onclick="currentSlide(15)"></span>
+        <span class="dot" onclick="currentSlide(16)"></span>
+        <span class="dot" onclick="currentSlide(17)"></span>
+        <span class="dot" onclick="currentSlide(18)"></span>
+        <span class="dot" onclick="currentSlide(19)"></span>
+        <span class="dot" onclick="currentSlide(20)"></span>
+        <span class="dot" onclick="currentSlide(21)"></span>
+    </div>
 </body>
 </html>
