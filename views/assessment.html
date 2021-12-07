@@ -16,8 +16,7 @@
 <body>
     <header>
         <div class="back-btn">
-            <img src="../assets/images/back-btn.png">
-            <p>Back to Home</p>
+            <a href="../index.html">&#10094;<p>Back to Home</p></a>
         </div>
         <div class="title-box">
             <h1 class="title">PneumoTech</h1>
@@ -28,22 +27,27 @@
         <form action="result.html">
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 1</div>
-                <label>What is your age?</label>
+                <div class="label-box">
+                    <label>What is your age?</label>
+                </div>
                 <input type="number" id="ageAnswer" name="age" min="1" max="100" placeholder="Ex. 24" required>
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 2</div>
-                <label>What is your current temperature?</label>
+                <div class="label-box">
+                    <label>What is your current temperature?</label>
+                </div>
                 <input type="number" id="tempAnswer" name="temperature" min="35" max="39" 
                 placeholder="In Celcius" required>
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 3</div>
-                <label>
-                    What is the severity of your lung disease such as Chronic obstructive pulmonary disease, 
-                    bronchiectasis, or cystic fibrosis or any other lung disease?
-                </label>
-                <div class="range-wrap">
+                <div class="label-box">
+                    <label>
+                        What is the severity of your lung disease such as Chronic obstructive pulmonary disease, 
+                        bronchiectasis, or cystic fibrosis or any other lung disease?
+                    </label>
+                </div>
                     <input 
                         type="range" 
                         id="lungAnswer" 
@@ -53,7 +57,6 @@
                         oninput="this.nextElementSibling.value = this.value"
                         required>
                     <output id="rangeValue">0</output>
-                </div>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Confirmed negative of any lung disease.
@@ -79,8 +82,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 4</div>
-                <label>What is the severity of your heart disease?</label>
-                <input type="range" id="heartAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of your heart disease?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="heartAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Confirmed negative of any heart disease.
@@ -108,8 +121,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 5</div>
-                <label>What is the severity of your diabetes?</label>
-                <input type="range" id="diabetesAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of your diabetes?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="diabetesAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Confirmed negative of diabetes.
@@ -138,8 +161,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 6</div>
-                <label>What is the severity of your HIV/AIDS?</label>
-                <input type="range" id="hivAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of your HIV/AIDS?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="hivAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Confirmed negative of HIV/AIDS, never performed sexual activities with 
@@ -166,36 +199,96 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 7</div>
-                <label>How many days have you been experiencing cough/cold?</label>
-                <input type="range" id="coughAnswer" class="range_50" min="0" max="50" step="0.1" required>
+                <div class="label-box">
+                    <label>How many days have you been experiencing cough/cold?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="coughAnswer" 
+                    class="range_50" 
+                    min="0" max="50" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 8</div>
-                <label>How many month/s have you been taking chemotherapy/steroid?</label>
-                <input type="range" id="chemoAnswer" class="range_12" min="0" max="12" step="0.1" required>
+                <div class="label-box">
+                    <label>How many month/s have you been taking chemotherapy/steroid?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="chemoAnswer" 
+                    class="range_12" 
+                    min="0" max="12" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 9</div>
-                <label>How many cigarette/s do you smoke every day?</label>
-                <input type="range" id="smokeAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>How many cigarette/s do you smoke every day?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="smokeAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 10</div>
-                <label>How many bottle/s of alcohol do you drink for a day?</label>
-                <input type="range" id="alcoholAnswer" class="range_8" min="0" max="8" step="0.1" required>
+                <div class="label-box">
+                    <label>How many bottle/s of alcohol do you drink for a day?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="alcoholAnswer" 
+                    class="range_8" 
+                    min="0" max="8" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 11</div>
-                <label>
-                    How many hours per day are you being exposed to certain chemical pollutants 
-                    (toxic fumes, secondhand smoke)? 
-                </label>
-                <input type="range" id="chemicalAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>
+                        How many hours per day are you being exposed to certain chemical pollutants 
+                        (toxic fumes, secondhand smoke)? 
+                    </label>
+                </div>
+                <input 
+                    type="range" 
+                    id="chemicalAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 12</div>
-                <label>What is the severity of the swallowing problems you feel?</label>
-                <input type="range" id="swallowAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of the swallowing problems you feel?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="swallowAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Occasional difficulty swallowing, such as when you eat too fast or 
@@ -219,8 +312,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 13</div>
-                <label>What is the severity of the sweating or shaking chills you feel?</label>
-                <input type="range" id="sweatingAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of the sweating or shaking chills you feel?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="sweatingAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Sweating/shaking normally on certain occasions.
@@ -242,8 +345,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 14</div>
-                <label>How difficult is your breathing?</label>
-                <input type="range" id="breatheAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>How difficult is your breathing?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="breatheAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Shortness of breath experienced on occasion with physical activity 
@@ -266,8 +379,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 15</div>
-                <label>What is the severity of the sharp or stabbing chest pain you feel?</label>
-                <input type="range" id="chestAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of the sharp or stabbing chest pain you feel?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="chestAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Shortness of breath experienced on occasion with physical activity 
@@ -290,8 +413,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 16</div>
-                <label>How serious is your loss of appetite?</label>
-                <input type="range" id="appetiteAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>How serious is your loss of appetite?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="appetiteAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b>Not experiencing loss of appetite.
@@ -311,8 +444,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 17</div>
-                <label>What is the severity of the fatigue/tiredness you feel?</label>
-                <input type="range" id="fatigueAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of the fatigue/tiredness you feel?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="fatigueAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Fatigue with reasonable cause.
@@ -335,8 +478,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 18</div>
-                <label>What is the severity of the nausea and vomiting you feel?</label>
-                <input type="range" id="nauseaAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of the nausea and vomiting you feel?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="nauseaAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Not experiencing nausea/vomiting.
@@ -357,8 +510,18 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 19</div>
-                <label>What is the severity of the confusion you feel?</label>
-                <input type="range" id="confusionAnswer" class="range_20" min="0" max="20" step="0.1" required>
+                <div class="label-box">
+                    <label>What is the severity of the confusion you feel?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="confusionAnswer" 
+                    class="range_20" 
+                    min="0" max="20" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
                 <div class="tooltip-text">
                     <p>
                         <b>None:</b> Completely healthy mind.
@@ -382,16 +545,35 @@
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 20</div>
-                <label>How many days have you been hospitalized?</label>
-                <input type="range" id="hospitalAnswer" class="range_100" min="0" max="100" step="0.1" required>
+                <div class="label-box">
+                    <label>How many days have you been hospitalized?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="hospitalAnswer" 
+                    class="range_100" 
+                    min="0" max="100" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                <output id="rangeValue">0</output>
             </div>
             <div class="slide-container fade"> 
                 <div class="numberquestion">question 21</div>
-                <label>How many week/s have you been using ventilator?</label>
-                <input type="range" id="ventilatorAnswer" class="range_50" min="0" max="50" step="0.1" required>
-                
+                <div class="label-box">
+                    <label>How many week/s have you been using ventilator?</label>
+                </div>
+                <input 
+                    type="range" 
+                    id="ventilatorAnswer" 
+                    class="range_50" 
+                    min="0" max="50" step="0.1" 
+                    value="0"
+                    oninput="this.nextElementSibling.value = this.value"
+                    required>
+                    <output id="rangeValue">0</output>
                 <div class="button">
-                    <button type="submit" class="submit-btn">Submit</button>
+                    <a href="result.html"><button type="submit" class="submit-btn">Submit</button></a>
                 </div>       
             </div>
 
