@@ -26,6 +26,7 @@ function setup(htmlComponent) {
   })
 }
 
+// Slides Components
 var slideIndex = 1;
   showSlides(slideIndex);
 

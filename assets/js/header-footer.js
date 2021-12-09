@@ -1,5 +1,5 @@
 // Load Header and Footer
 $(function(){
-    $("#header").load("../../views/header.html"); 
-    $("#footer").load("../../views/footer.html"); 
+    $("#header").load("/views/header.html"); 
+    $("#footer").load("/views/footer.html"); 
 });
