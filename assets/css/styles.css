@@ -632,12 +632,22 @@ animation */
 }
 
 .author-image{
-   
+    position: relative;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
     border: 3px solid #1663BE;
     border-color: #1663BE;
     border-radius: 100%;
 }
 
+.image-container:hover .author-image{
+    opacity: 0.3;
+}
+.image-container:hover .middle{
+    opacity: 1;
+}
 .about-images{
     margin-bottom: 500px;
 }
