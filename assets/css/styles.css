@@ -627,6 +627,10 @@ animation */
     color: #26a0fd;
 }
 
+.about-content-details h1{
+    margin-bottom: 20px;
+}
+
 .author-image{
    
     border: 3px solid #1663BE;
@@ -634,51 +638,39 @@ animation */
     border-radius: 100%;
 }
 
-#Allyza{
-    width: 35%;
-    margin-top: 100px;
+.about-images{
+    margin-bottom: 500px;
 }
 
-#Alissa{
-    width: 35%;
-    
-}
-
-#Cedrick{
-    width: 35%;
-}
-
-#Jovelyn{
-    width: 35%;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-   
-  }
-  
-.tooltip .tooltiptext {
-    visibility: hidden;
+#author-1{
     position: absolute;
-    z-index: 1;
-    top: 20px;
-    left: 0px;
-	width: 250px;
-    padding: 10px 0;
+    width: 13%;
+    left: 100px;
+    top: 130px;
+}
 
-    text-align: center;
-    font-size: 18px;
-    border-radius: 6px;
+#author-2{
+    position: absolute;
+    width: 13%;
+    right: 200px;
+    top: 130px;
     
-    
-	color: white;
-	background-color: #26a0fd;
 }
-  
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+
+#author-3{
+    position: absolute;
+    width: 13%;
+    left: 300px;
+    top: 350px;
 }
+
+#author-4{
+    position: absolute;
+    width: 13%;
+    right: 400px;
+    top: 350px;
+}
+
+
 
 /* END ABOUT PAGE BODY SECTION  */
