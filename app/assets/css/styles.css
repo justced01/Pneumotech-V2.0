@@ -433,7 +433,7 @@ animation */
 .contact-container{
     position: relative;
     width: 1100px;
-    height: 700px;
+    height: 670px;
     margin: 8% 15%;
     padding: 40px;
 
@@ -481,7 +481,7 @@ animation */
 .contact-form{
     float: right;
     width: 50%;
-    height: 85%;
+    height: 83%;
     padding: 40px;
     margin-left: 10px;
 
@@ -598,10 +598,89 @@ animation */
     border: none;
     border-radius: 5px;
     
-    background-color: #1663BE;;
+    background-color: #1663BE;
     color: #F7F7F7;
 }
 
 .btn-contact:hover{
     background-color:#26a0fd ;
 }
+
+/* END CONTACT PAGE BODY SECTION  */
+
+/* START ABOUT PAGE BODY SECTION  */
+.about-container{
+    position: relative;
+    margin: 200px 150px 50px 150px;
+}
+
+.about-content{
+
+    text-align: center;
+}
+
+.about-content #about-header{
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #26a0fd;
+}
+
+.about-content-details h1{
+    margin-bottom: 20px;
+}
+
+.author-image{
+    position: relative;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+    border: 3px solid #1663BE;
+    border-color: #1663BE;
+    border-radius: 100%;
+}
+
+.image-container:hover .author-image{
+    opacity: 0.3;
+}
+.image-container:hover .middle{
+    opacity: 1;
+}
+.about-images{
+    margin-bottom: 500px;
+}
+
+#author-1{
+    position: absolute;
+    width: 13%;
+    left: 100px;
+    top: 130px;
+}
+
+#author-2{
+    position: absolute;
+    width: 13%;
+    right: 200px;
+    top: 130px;
+    
+}
+
+#author-3{
+    position: absolute;
+    width: 13%;
+    left: 300px;
+    top: 350px;
+}
+
+#author-4{
+    position: absolute;
+    width: 13%;
+    right: 400px;
+    top: 350px;
+}
+
+
+
+/* END ABOUT PAGE BODY SECTION  */
