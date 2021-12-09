@@ -4,15 +4,22 @@
     <title>Result Page</title>
 
     <!-- Extensions & Libraries -->
-    <script src="../assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100&family=Varela+Round&display=swap" rel="stylesheet">
     
     <!-- Include Files -->
-    <link rel="shortcut icon" href="../assets/images/logo-only-modified.png" />
-    <link rel="stylesheet" href='./assets/css/styles.css' />
-    <script type="text/javascript" src="../assets/js/header-footer.js"></script>
-    <script type="text/javascript" src="../assets/js/result.js"></script>
+    <link rel="shortcut icon" href="./assets/images/logo-only-modified.png" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/styles.css" />
+    <script type="text/javascript" src="./assets/js/header-footer.js"></script>
+    <script type="text/javascript">
+        function setup(htmlComponent) {				  
+            htmlComponent.addEventListener('DataChanged', function(event) {
+            document.getElementById('risk').innerHTML = htmlComponent.Data[0];
+            document.getElementById('type').innerHTML = htmlComponent.Data[1];
+    });    
+}
+    </script>
 </head>
 <body>
     <section>
@@ -28,9 +35,9 @@
                 <h1>Here's your result</h1>
                 <h4>Please note that the list below is provided solely for informational purposes.</h4>
                 <h2>Risk Level:</h2>
-                <div id="risk" class="risk"></div>
+                <div id='risk' class="risk"></div>
                 <h2>Pneumonia Type:</h2>
-                <div id="type" class="type"></div>
+                <div id='type' class="type"></div>
                 <div class="advice-container">
                     <h4>Our advice:</h4>
                     <div id="advice-text" class="advice-text">
