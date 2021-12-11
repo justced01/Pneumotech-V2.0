@@ -741,7 +741,7 @@ textarea {
     position: absolute;
     width: 120px;
     height: 120px;
-    top: 50px;
+    bottom: 40px;
     right: 100px;
 }
 
@@ -749,10 +749,8 @@ textarea {
     position: absolute;
     width: 120px;
     height: 120px;
-    top: 70px;
-    right: 230px;
+    bottom: 20px;
+    right: 300px;
 }
-
-
 
 /* END ABOUT PAGE BODY SECTION  */
