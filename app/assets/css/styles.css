@@ -7,7 +7,7 @@
 } 
 
 body {
-    width: 1920px;
+    max-width: 100%;
     height: auto;
 
     font-family: "Helvetica";
@@ -65,7 +65,7 @@ header {
 .nav-items {
     position: absolute;
     top: 35px;
-    left: 800px;
+    left: 500px;
 }
 
 .nav-items a{
@@ -89,7 +89,7 @@ header {
 .assessment-btn {
     position: absolute;
     top: 25px;
-    left: 1570px;
+    left: 1200px;
 }
 
 .assessment-text {
@@ -216,11 +216,11 @@ header {
 /* container */
 .container {
     position: relative;
-    width: 1300px;
+    max-width: 1300px;
     height: 450px;
     top: 80px;
     bottom: 50px;
-    margin: 50px 300px;
+    margin: 50px auto;
 
     border: .5px solid #D3D3D3; 
     border-radius: 5px;
@@ -406,7 +406,7 @@ footer {
 
 .credits {
     position: absolute;
-    width: 400px;
+    width: 200px;
     height: auto;
     top: 70px;
     left: 1350px;
