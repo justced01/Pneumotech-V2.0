@@ -1,3 +1,15 @@
+/* FONTS */
+@font-face {
+    font-family: Ubuntu;
+    src: url("fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+
 /* BODY */
 
 /* Universal Selector */
@@ -36,6 +48,7 @@ header {
     padding-top: 30px;
     padding-left: 120px;
 }
+
 
 .logo a {
     padding: 5px 5px;
