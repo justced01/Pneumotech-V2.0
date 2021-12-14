@@ -10,7 +10,7 @@ body {
     max-width: 100%;
     height: auto;
 
-    font-family: "Helvetica";
+    font-family: "helveticaregular";
     background-color: #F7F7F7;
 }
 
@@ -327,6 +327,8 @@ footer {
 
     background-color: rgb(211, 241, 255);
 }
+
+
 
 .logo-footer {
     width: 200px;
