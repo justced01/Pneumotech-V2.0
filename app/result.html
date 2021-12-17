@@ -16,6 +16,7 @@
             htmlComponent.addEventListener('DataChanged', function(event) {
             document.getElementById('risk').innerHTML = htmlComponent.Data[0];
             document.getElementById('type').innerHTML = htmlComponent.Data[1];
+			document.getElementById('advice-text').innerHTML = htmlComponent.Data[2];
     });    
 }
     </script>
@@ -40,7 +41,7 @@
                 <div class="advice-container">
                     <h4>Our advice:</h4>
                     <div id="advice-text" class="advice-text">
-                        Wala langasdasdadasdasdadasd a asdadadasdasdas adas asdasdadadasdasdas  
+                        
                     </div>
                 </div>
                 <a href="index.html"><button class="home-btn">Back to Home</button></a>
