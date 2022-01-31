@@ -20,8 +20,10 @@
     padding: 0;
 }
 
+
 body {
     max-width: 100%;
+    height: auto;
 
     font-family: "Helvetica";
     background-color: #F7F7F7;
@@ -40,7 +42,7 @@ header {
 .back-btn p {
     font-family: Roboto;
     font-style: medium;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .title-box {
@@ -72,16 +74,26 @@ header {
 /* container */
 .container {
     position: relative;
-    width: 1100px;
-    height: 500px;
-    top: 100px;;
-    margin: auto;
+    width: 60%;
+    height: 550px;
+    top: -320px;
+    margin-left: 33%;
 
     border: .5px solid #D3D3D3; 
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     background-color: #fff; 
+}
+
+.scale-container{
+    position: relative;
+    width: 50%;
+    top: 80px;
+}
+
+.scale-container #scale{
+    width: 60%;
 }
 
 .slide-container {
@@ -123,6 +135,81 @@ header {
     color: white;
     background-color: rgba(4, 4, 4, 0.8);
 }
+/*Instruction - Diagnosis Steps*/
+.label-box-instruction{
+    position: relative;
+    width: 90%;
+    height: auto;
+    top: 20%;
+
+    margin: 50px auto;
+}
+.instruction-stepper {
+	display:table;
+	width:100%;
+	margin:0 auto;
+}
+.instruction-stepper .instruction-step {
+    position:relative;
+	display:table-cell;
+	padding:20px;
+}
+
+.instruction-stepper .instruction-step:first-child .instruction-step-bar-left,
+.instruction-stepper .instruction-step:last-child .instruction-step-bar-right {
+	display:none;
+}
+
+.instruction-step .instruction-step-circle {
+
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	background-color: rgb(26, 152, 248);
+    
+	border-radius: 50%;
+	text-align: center;
+	line-height:30px;
+	font-size: 16px;
+	font-weight: 600;
+	color:#FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.instruction-stepper .instruction-step .instruction-step-title {
+	margin-top:16px;
+	font-size:16px;
+	font-weight:600;
+}
+
+.instruction-stepper .instruction-step-title {
+	font-weight: 600;
+	color:rgba(0,0,0,.87);
+}
+
+.instruction-stepper .instruction-step .instruction-step-subtitle {
+	font-size:15px;
+}
+.instruction-stepper .instruction-step.active .instruction-step-subtitle {
+	color:rgba(0,0,0,.54);
+}
+.instruction-stepper .instruction-step .instruction-step-bar-left,
+.instruction-stepper .instruction-step .instruction-step-bar-right {
+	position:absolute;
+	top:36px;
+	height:1px;
+	border-top:8px solid #DDDDDD;
+}
+.instruction-stepper .instruction-step .instruction-step-bar-right {
+	right:0;
+	left:50%;
+	margin-left:20px;
+}
+.instruction-stepper .instruction-step .instruction-step-bar-left {
+	left:0;
+	right:50%;
+	margin-right:20px;
+}
 
 .numberquestion {
     position: absolute;
@@ -139,9 +226,11 @@ header {
 
 .label-box {    
     position: relative;
-    width: 100%;
+    width: 90%;
     height: auto;
     top: 20%;
+
+    margin: 5px auto;
 }
 
 .label-box label {
@@ -235,7 +324,7 @@ p {
 .tooltip-text {
     position: absolute;
     top: 60%;
-    left: 80%;
+    left: 55%;
     width: 520px;
     padding: 15px;
     z-index: 1;

@@ -131,6 +131,46 @@ header {
     transition: all .5s;
 }
 
+@media all and (min-width: 500px) and (max-width: 800px) {
+    header {
+        height: 80px;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 41px;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+    .logo a {
+        font-size: 20px;
+    }
+    .nav-items {
+    
+        top: 27px;
+        left: 210px;
+    }
+    
+    .nav-items a{
+        padding: 10px;
+
+        font-size: 20px;
+    }
+
+    .assessment-btn {
+        top: 24px;
+        left: 550px;
+    }
+
+    .assessment-text {
+        padding: 5px 15px;
+
+        font-size: 20px;
+    }
+    
+    
+}
+
 .terms-modal {
     position: fixed;
     display: none;
@@ -140,6 +180,9 @@ header {
     left: 0;
     padding-top: 200px;
     z-index: 2;
+
+    font-family: Roboto;
+    font-style: regular;
     
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
