@@ -38,7 +38,7 @@
     <param.example />
     <param.help.text>Syntax 
 	  -? 
-	 
+
  Input Arguments 
 	 -?  print help on how to use the application 
 	 input arguments</param.help.text>
@@ -130,4 +130,4 @@
       <matlab>true</matlab>
     </platform>
   </configuration>
-</deployment-project>
+</deployment-project> 
