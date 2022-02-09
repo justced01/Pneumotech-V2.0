@@ -71,36 +71,37 @@ header {
 
 /* START ASSESSMENT BODY SECTION  */
 /* container */
+
+/* Dito beh yung pag position ng bawat pic */
+.scale-container {
+    position: absolute;
+    width: 100%;
+}
+.scale-pic{
+    position: absolute;
+    top: 160px;
+    left: -20px;
+    width: 360px;
+}
+.steps-pic{
+    position: absolute;
+    top: 150px;
+    right: -250px;
+    width: 625px;
+}
+
 .container {
     position: relative;
-    width: 60%;
+    width: 50%;
     height: 550px;
-    top: -320px;
-    margin-left: 33%;
+    top: 80px;
+    margin: 0 auto;
 
     border: .5px solid #D3D3D3; 
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     background-color: #fff; 
-}
-
-.scale-container{
-    position: relative;
-    width: 50%;
-    top: 80px;
-}
-
-.scale-container{
-    width: 60%;
-}
-
-#scale{
-    width: 50%;
-}
-
-#instructions{
-    width: 50%;
 }
 
 .slide-container {
