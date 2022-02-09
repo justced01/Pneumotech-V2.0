@@ -91,8 +91,16 @@ header {
     top: 80px;
 }
 
-.scale-container #scale{
+.scale-container{
     width: 60%;
+}
+
+#scale{
+    width: 50%;
+}
+
+#instructions{
+    width: 50%;
 }
 
 .slide-container {
